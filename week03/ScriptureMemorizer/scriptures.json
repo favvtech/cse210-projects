@@ -1,0 +1,23 @@
+[
+  {
+    "book": "John",
+    "chapter": 3,
+    "startVerse": 16,
+    "text": "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life."
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 3,
+    "startVerse": 5,
+    "endVerse": 6,
+    "text": "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths."
+  },
+  {
+    "book": "Psalm",
+    "chapter": 23,
+    "startVerse": 1,
+    "text": "The Lord is my shepherd; I shall not want."
+  }
+]
+
+
