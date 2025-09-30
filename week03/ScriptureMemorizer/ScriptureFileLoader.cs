@@ -3,15 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 
-public class ScriptureRecord
-{
-    public string Book { get; set; }
-    public int Chapter { get; set; }
-    public int StartVerse { get; set; }
-    public int? EndVerse { get; set; }
-    public string Text { get; set; }
-}
-
+#nullable enable
 public static class ScriptureFileLoader
 {
     public static List<Scripture> LoadFromJson(string fileName)
