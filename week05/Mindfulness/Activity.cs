@@ -84,20 +84,31 @@ namespace Mindfulness
             var i = 0;
             while (DateTime.UtcNow < end)
             {
-                Console.Write($"\r{frames[i % frames.Length]} ");
+                char frame = frames[i % frames.Length];
+                Console.Write(frame);
                 Thread.Sleep(200);
+                // Erase the frame using backspace, space, backspace
+                Console.Write('\b');
+                Console.Write(' ');
+                Console.Write('\b');
                 i++;
             }
-            Console.Write("\r  \r");
         }
 
         protected static void ShowCountdown(int seconds)
         {
             for (int i = seconds; i > 0; i--)
             {
-                Console.Write($"{i}");
+                var text = i.ToString();
+                Console.Write(text);
                 Thread.Sleep(1000);
-                Console.Write("\r  \r");
+                // Erase each digit using backspace-space-backspace
+                for (int k = 0; k < text.Length; k++)
+                {
+                    Console.Write('\b');
+                    Console.Write(' ');
+                    Console.Write('\b');
+                }
             }
         }
     }
